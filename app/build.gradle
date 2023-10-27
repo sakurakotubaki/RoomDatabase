@@ -83,4 +83,11 @@ dependencies {
 
     // optional - RxJava2 support for Room
     implementation "androidx.room:room-rxjava2:$room_version"
+
+    // https://developer.android.com/jetpack/androidx/releases/navigation
+    // 画面遷移のパッケージを追加
+    def nav_version = "2.5.3"
+
+    // Java language implementation
+    implementation("androidx.navigation:navigation-compose:$nav_version")
 }
