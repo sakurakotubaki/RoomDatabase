@@ -9,5 +9,11 @@ class Repository(val booksDB: BooksDB) {
         booksDB.bookDAO().addBook(bookEntity)
     }
 
+    fun getAllBooks() = booksDB.bookDAO().getAllBooks()
+
+    suspend fun deleteBookFromRoom(bookEntity: BookEntity){
+        booksDB.bookDAO().deleteBook(bookEntity = bookEntity)
+    }
+
 
 }
