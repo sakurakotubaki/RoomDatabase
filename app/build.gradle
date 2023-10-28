@@ -28,8 +28,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_9
+        targetCompatibility JavaVersion.VERSION_1_9
     }
     kotlinOptions {
         jvmTarget = '1.8'
@@ -83,4 +83,11 @@ dependencies {
 
     // optional - RxJava2 support for Room
     implementation "androidx.room:room-rxjava2:$room_version"
+
+    // https://developer.android.com/jetpack/androidx/releases/navigation
+    // 画面遷移のパッケージを追加
+    def nav_version = "2.5.3"
+
+    // Java language implementation
+    implementation("androidx.navigation:navigation-compose:$nav_version")
 }
